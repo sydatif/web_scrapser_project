@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as uReq
 import re
 from csv import writer
+import sys
 
 
 my_url = "https://www.yelp.com/biz/marked-restaurant-toronto"
