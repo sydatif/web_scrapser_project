@@ -2,8 +2,6 @@ from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as uReq
 import re
 from csv import writer
-import sys
-
 
 my_url = "https://www.yelp.com/biz/marked-restaurant-toronto"
 #my_url = "https://www.yelp.ca/biz/lov-king-west-toronto-2"
@@ -55,7 +53,7 @@ for n in range(nuser):
     print("Review :", post)
     print()
 
-    
     f.write(name + "," + address.replace(","," ") + "," + tnum_of_friend + "," + date + "," + tnum_of_review + "," + post.replace(",",".") + "\n" )
         
 f.close()
+
